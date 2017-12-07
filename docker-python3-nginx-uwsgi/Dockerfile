@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-RUN apk add --no-cache nginx
+RUN apk add --no-cache nginx ca-certificates
 RUN apk add --no-cache python3 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
