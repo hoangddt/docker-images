@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 MAINTAINER hoangddt <quochoangddt@gmail.com>
 
-RUN apk add --no-cache git openssh python3 && \
+RUN apk add --no-cache git make openssh python3 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
